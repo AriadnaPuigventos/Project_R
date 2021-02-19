@@ -1,0 +1,9 @@
+Package: predecirNAN
+Title: What The Package Does (one line, path required)
+Version: 0.1
+Authors@R: Ariadna, Alfonso, Estela
+Description: Predicts first Nan it encounters. 
+Depends: R (>= 3.1.0) NaN
+License: What license is it under?
+LazyData: true
+RoxygenNote: 7.0.2

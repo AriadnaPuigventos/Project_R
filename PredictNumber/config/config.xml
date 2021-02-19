@@ -1,0 +1,6 @@
+<config>  
+<input>
+    <name>child_mortality.csv</name>
+    <sep>,</sep>
+  </input>  
+</config> 
