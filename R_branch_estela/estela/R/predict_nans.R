@@ -1,5 +1,5 @@
 @title PredictNanValues
-#' @description Funcion principal del paquete de clasificarContactos
+#' @description Funcion principal del paquete de predecir NaN
 #'
 #' @param path, string
 #'
@@ -21,13 +21,12 @@ predict_nans<- function(path){
     config <- leerConfig(path)
     loginfo("Config leido.", logger = 'log')
     
-    
     loginfo("Leyendo los datos...", logger = 'log')
     datos <- leerDatos(config, path)
     loginfo("Datos leidos.", logger = 'log')
     
     loginfo("Procesando los datos...", logger = 'log')
-    splitDatos <- preProcesarDatos(datos)
+    splitDatos <- preProcesar(datos)
     loginfo("Datos procesados.", logger = 'log')
     
     loginfo("Generando modelo...", logger = 'log')

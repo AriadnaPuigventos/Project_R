@@ -5,9 +5,7 @@
 #'
 #' @import lm
 #' @import logging
-#' @param datosSplit 
-#'
-#' @param config 
+#' @param preProcesed 
 #'
 #' @examples
 #' 

@@ -1,10 +1,9 @@
-Package: clasificarContactos
-Title: What The Package Does (one line, title case required)
+Package: predecirNAN
+Title: What The Package Does (one line, path required)
 Version: 0.1
-Authors@R: person("Nacho", "Rodriguez", email = "nacho.rod11@hotmail.com",
-                  role = c("aut", "cre"))
-Description: What the package does (one paragraph)
-Depends: R (>= 3.1.0)
+Authors@R: Ariadna, Alfonso, Estela
+Description: Predicts first Nan it encounters. 
+Depends: R (>= 3.1.0) NaN
 License: What license is it under?
 LazyData: true
 RoxygenNote: 7.0.2
