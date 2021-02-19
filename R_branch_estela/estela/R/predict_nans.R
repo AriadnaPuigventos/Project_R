@@ -7,6 +7,8 @@
 #' @import logging
 #'
 #' @author Alfon, Ari, Estela
+#' 
+#' 
 predict_nans<- function(path){
   tryCatch(expr = {
     library(logging)
@@ -24,6 +26,19 @@ predict_nans<- function(path){
     datos <- leerDatos(config, path)
     loginfo("Datos leidos.", logger = 'log')
     
+    loginfo("Procesando los datos...", logger = 'log')
+    splitDatos <- preProcesarDatos(datos)
+    loginfo("Datos procesados.", logger = 'log')
+    
+    loginfo("Generando modelo...", logger = 'log')
+    output <- generarModelo(preProcesed)
+    loginfo("Modelo generado.", logger = 'log')
+    
+    loginfo("Generando output...", logger = 'log')
+    generarOutput(resultado, path)
+    loginfo("Output generado.", logger = 'log')
+    
+    
     
   }, error = function(e){
     
@@ -37,3 +52,4 @@ predict_nans<- function(path){
   })
   
 }
+

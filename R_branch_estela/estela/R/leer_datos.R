@@ -4,7 +4,8 @@
 #' @param path 
 #'
 #' @return
-#' @export
+#' @export 
+#' 
 #'
 #' @examples
 leerDatos <- function(config, path){

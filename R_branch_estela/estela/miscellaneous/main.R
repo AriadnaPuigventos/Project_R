@@ -23,16 +23,29 @@ clasificarContactosApp(Directorio)
 
 
 
-
 path<-paste0(getwd(),"/")
 path
 
-d<-predict_nans(path)
 
 config<-leerConfig(path)
 
-data=leerDatos(config, path)
+data<-leerDatos(config, path)
+
+pPd<-preProcesar(data)
+
+out<-generarModelo(pPd)
+
+generarOutput(out, path)
 
 
-data
+predict_nans(path)
+
+
+
+rm()
+
+
+
+
+
 
